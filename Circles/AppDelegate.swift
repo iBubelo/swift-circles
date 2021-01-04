@@ -2,7 +2,6 @@
 //  AppDelegate.swift
 //  Circles
 //
-//  Created by Ilya Bubelo on 04.01.21.
 //
 
 import UIKit

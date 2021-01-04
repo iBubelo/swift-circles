@@ -13,6 +13,8 @@
 		0969209925A3870500B4764E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0969209725A3870500B4764E /* Main.storyboard */; };
 		0969209B25A3870500B4764E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0969209A25A3870500B4764E /* Assets.xcassets */; };
 		0969209E25A3870500B4764E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0969209C25A3870500B4764E /* LaunchScreen.storyboard */; };
+		09BCC4D825A39618008F7A45 /* CustomCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BCC4D725A39618008F7A45 /* CustomCircle.swift */; };
+		09BCC4DB25A39D26008F7A45 /* CustomCircle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09BCC4DA25A39D26008F7A45 /* CustomCircle.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		0969209A25A3870500B4764E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0969209D25A3870500B4764E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0969209F25A3870500B4764E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09BCC4D725A39618008F7A45 /* CustomCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCircle.swift; sourceTree = "<group>"; };
+		09BCC4DA25A39D26008F7A45 /* CustomCircle.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCircle.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				0969209125A3870500B4764E /* AppDelegate.swift */,
 				0969209325A3870500B4764E /* SceneDelegate.swift */,
 				0969209525A3870500B4764E /* ViewController.swift */,
+				09BCC4DA25A39D26008F7A45 /* CustomCircle.xib */,
+				09BCC4D725A39618008F7A45 /* CustomCircle.swift */,
 				0969209725A3870500B4764E /* Main.storyboard */,
 				0969209A25A3870500B4764E /* Assets.xcassets */,
 				0969209C25A3870500B4764E /* LaunchScreen.storyboard */,
@@ -124,6 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09BCC4DB25A39D26008F7A45 /* CustomCircle.xib in Resources */,
 				0969209E25A3870500B4764E /* LaunchScreen.storyboard in Resources */,
 				0969209B25A3870500B4764E /* Assets.xcassets in Resources */,
 				0969209925A3870500B4764E /* Main.storyboard in Resources */,
@@ -139,6 +146,7 @@
 			files = (
 				0969209625A3870500B4764E /* ViewController.swift in Sources */,
 				0969209225A3870500B4764E /* AppDelegate.swift in Sources */,
+				09BCC4D825A39618008F7A45 /* CustomCircle.swift in Sources */,
 				0969209425A3870500B4764E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
