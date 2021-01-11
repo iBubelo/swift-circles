@@ -7,7 +7,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var viewOne: CustomCircle!
     @IBOutlet weak var viewTwo: CustomCircle!
     @IBOutlet weak var viewThree: CustomCircle!
@@ -30,36 +30,16 @@ class ViewController: UIViewController {
             viewSix,
             viewSeven
         ]
-    }
-
-    @IBAction func panPurple(_ sender: UIPanGestureRecognizer) {
-        move(sender)
-        
-        guard let senderView = sender.view else {
-            return
-        }
-        let senderFrame = senderView.frame
         
         for view in arrayOfViews {
-            let viewFrame = view.frame
-            
-            let viewX = viewFrame.minX
-            let viewY = viewFrame.minY
-            let viewWidth = viewFrame.width
-            let viewHeight = viewFrame.height
-        
-            if senderFrame.intersects(viewFrame) {
-                if senderView.isEqual(view) {
-                    return
-                }
-            
-                view.workingView.backgroundColor = .blue
-                senderView.isHidden = true
-                view.frame = CGRect(x: viewX, y: viewY, width: viewWidth + 10, height: viewHeight + 10)
-            }
+            view.workingView.backgroundColor = randomBlueColor()
         }
     }
-        
+    
+    @IBAction func pan(_ sender: UIPanGestureRecognizer) {
+        move(sender)
+    }
+    
     func move(_ gesture: UIPanGestureRecognizer) {
         let gestureTranslation = gesture.translation(in: view)
         
@@ -67,12 +47,46 @@ class ViewController: UIViewController {
             return
         }
         
-        gestureView.center = CGPoint(x: gestureView.center.x + gestureTranslation.x, y: gestureView.center.y + gestureTranslation.y)
-        gesture.setTranslation(.zero, in: view)
+        if gesture.state == .changed {
+            gestureView.center = CGPoint(x: gestureView.center.x + gestureTranslation.x, y: gestureView.center.y + gestureTranslation.y)
+            gesture.setTranslation(.zero, in: view)
+        }
         
-        guard gesture.state == .ended else {
-            return
+        if gesture.state == .ended {
+            animate(gestureView)
         }
     }
+    
+    func animate(_ gestureView: UIView) {
+        let senderFrame = gestureView.frame
+        
+        for view in arrayOfViews {
+            let viewFrame = view.frame
+            
+            if senderFrame.intersects(viewFrame) {
+                if gestureView.isEqual(view) {
+                    return
+                }
+                
+                UIView.animateKeyframes(withDuration: 2, delay: 0, options: .calculationModeLinear, animations: {
+                    UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 1) {
+                        gestureView.isHidden = true
+                        view.transform = view.transform.scaledBy (x: 1.2, y: 1.2)
+                    }
+                    UIView.addKeyframe(withRelativeStartTime: 0.25, relativeDuration: 0.5) {
+                        view.workingView.backgroundColor = self.randomBlueColor()
+                    }
+                })
+            }
+        }
+    }
+    
+    func randomBlueColor() -> UIColor {
+        return UIColor(red: 0,
+                       green: .random(in: 0...1),
+                       blue: 1,
+                       alpha: .random(in: 0.5...1))
+    }
 }
+
 

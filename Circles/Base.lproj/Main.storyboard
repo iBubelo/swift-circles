@@ -16,9 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eav-ZG-Uwv" userLabel="View Two" customClass="CustomCircle" customModule="Circles" customModuleProvider="target">
+                            <view tag="2" contentMode="scaleToFill" id="Eav-ZG-Uwv" userLabel="View Two" customClass="CustomCircle" customModule="Circles" customModuleProvider="target">
                                 <rect key="frame" x="259" y="191" width="50" height="50"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Wu3-7I-AcK"/>
@@ -28,21 +28,20 @@
                                     <outletCollection property="gestureRecognizers" destination="dbg-XC-BR6" appends="YES" id="ggv-kx-kBg"/>
                                 </connections>
                             </view>
-                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XZb-RO-3oN" userLabel="View One" customClass="CustomCircle" customModule="Circles" customModuleProvider="target">
+                            <view tag="1" contentMode="scaleToFill" id="XZb-RO-3oN" userLabel="View One" customClass="CustomCircle" customModule="Circles" customModuleProvider="target">
                                 <rect key="frame" x="103" y="97" width="79" height="79"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="79" id="KTY-FP-YuW"/>
-                                    <constraint firstAttribute="height" constant="79" id="RKE-pb-0Bu"/>
+                                    <constraint firstAttribute="width" secondItem="XZb-RO-3oN" secondAttribute="height" multiplier="1:1" id="4Ax-to-w9F"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="QeB-wG-318" appends="YES" id="vJU-nu-4GT"/>
                                 </connections>
                             </view>
-                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C0v-86-C7R" userLabel="View Three" customClass="CustomCircle" customModule="Circles" customModuleProvider="target">
+                            <view tag="3" contentMode="scaleToFill" id="C0v-86-C7R" userLabel="View Three" customClass="CustomCircle" customModule="Circles" customModuleProvider="target">
                                 <rect key="frame" x="133" y="274" width="46" height="46"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="ylh-ju-5HO"/>
@@ -52,33 +51,9 @@
                                     <outletCollection property="gestureRecognizers" destination="aST-aM-Y5m" appends="YES" id="8R0-Js-9kp"/>
                                 </connections>
                             </view>
-                            <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LJW-Qg-Weq" userLabel="View Four" customClass="CustomCircle" customModule="Circles" customModuleProvider="target">
-                                <rect key="frame" x="52" y="380" width="74" height="74"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="74" id="BRX-Nc-oSU"/>
-                                    <constraint firstAttribute="height" constant="74" id="ew2-Wp-nCg"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Agg-AY-Shd" appends="YES" id="5UW-dP-g3O"/>
-                                </connections>
-                            </view>
-                            <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bL3-Ji-IpX" userLabel="View Six" customClass="CustomCircle" customModule="Circles" customModuleProvider="target">
-                                <rect key="frame" x="85" y="538" width="118" height="118"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="118" id="94w-d7-yYC"/>
-                                    <constraint firstAttribute="height" constant="118" id="ax7-pL-I9L"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="EyG-Xm-IzV" appends="YES" id="Zj2-Jz-LeH"/>
-                                </connections>
-                            </view>
-                            <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJb-W1-2bk" userLabel="View Five" customClass="CustomCircle" customModule="Circles" customModuleProvider="target">
+                            <view tag="5" contentMode="scaleToFill" id="fJb-W1-2bk" userLabel="View Five" customClass="CustomCircle" customModule="Circles" customModuleProvider="target">
                                 <rect key="frame" x="244" y="420" width="70" height="70"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="Ki5-Di-MTL"/>
@@ -88,9 +63,33 @@
                                     <outletCollection property="gestureRecognizers" destination="VA9-mA-DHb" appends="YES" id="bTi-i8-A7B"/>
                                 </connections>
                             </view>
-                            <view tag="7" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Baw-Lx-1Qa" userLabel="View Seven" customClass="CustomCircle" customModule="Circles" customModuleProvider="target">
-                                <rect key="frame" x="246" y="692" width="87" height="87"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <view tag="4" contentMode="scaleToFill" id="LJW-Qg-Weq" userLabel="View Four" customClass="CustomCircle" customModule="Circles" customModuleProvider="target">
+                                <rect key="frame" x="51" y="379" width="74" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="BRX-Nc-oSU"/>
+                                    <constraint firstAttribute="height" constant="74" id="ew2-Wp-nCg"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Agg-AY-Shd" appends="YES" id="5UW-dP-g3O"/>
+                                </connections>
+                            </view>
+                            <view tag="6" contentMode="scaleToFill" id="bL3-Ji-IpX" userLabel="View Six" customClass="CustomCircle" customModule="Circles" customModuleProvider="target">
+                                <rect key="frame" x="85" y="537" width="118" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="118" id="94w-d7-yYC"/>
+                                    <constraint firstAttribute="height" constant="118" id="ax7-pL-I9L"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="EyG-Xm-IzV" appends="YES" id="Zj2-Jz-LeH"/>
+                                </connections>
+                            </view>
+                            <view tag="7" contentMode="scaleToFill" id="Baw-Lx-1Qa" userLabel="View Seven" customClass="CustomCircle" customModule="Circles" customModuleProvider="target">
+                                <rect key="frame" x="246" y="691" width="87" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="87" id="99W-1f-bK3"/>
@@ -108,7 +107,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Baw-Lx-1Qa" secondAttribute="trailing" constant="81" id="Bbv-Ot-Hct"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bL3-Ji-IpX" secondAttribute="bottom" constant="206" id="BpW-NV-5dt"/>
                             <constraint firstAttribute="bottom" secondItem="C0v-86-C7R" secondAttribute="bottom" constant="576" id="DAx-ns-3Ux"/>
-                            <constraint firstItem="XZb-RO-3oN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="103" id="GbE-Rz-Qog"/>
                             <constraint firstItem="bL3-Ji-IpX" firstAttribute="top" secondItem="LJW-Qg-Weq" secondAttribute="bottom" constant="84" id="I1x-pQ-OII"/>
                             <constraint firstItem="XZb-RO-3oN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="KMD-F7-39F"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bL3-Ji-IpX" secondAttribute="trailing" constant="211" id="M3d-tJ-hYh"/>
@@ -127,11 +125,11 @@
                             <constraint firstAttribute="bottom" secondItem="Eav-ZG-Uwv" secondAttribute="bottom" constant="655" id="dXe-oE-6vs"/>
                             <constraint firstItem="C0v-86-C7R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="dgr-oI-5Mo"/>
                             <constraint firstAttribute="trailing" secondItem="LJW-Qg-Weq" secondAttribute="trailing" constant="288" id="fAj-HG-fe2"/>
+                            <constraint firstItem="XZb-RO-3oN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="103" id="fu2-cV-V6a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XZb-RO-3oN" secondAttribute="trailing" constant="232" id="fy6-eC-o3v"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Eav-ZG-Uwv" secondAttribute="trailing" constant="105" id="ksB-g6-sd6"/>
-                            <constraint firstItem="C0v-86-C7R" firstAttribute="top" secondItem="XZb-RO-3oN" secondAttribute="bottom" constant="98" id="ooW-9H-9hn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C0v-86-C7R" secondAttribute="trailing" constant="235" id="wdJ-H1-rAD"/>
                             <constraint firstItem="Eav-ZG-Uwv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="147" id="wm3-c7-7Ov"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XZb-RO-3oN" secondAttribute="trailing" constant="232" id="xJn-T7-Fe7"/>
                         </constraints>
                     </view>
                     <connections>
@@ -147,43 +145,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="QeB-wG-318">
                     <connections>
-                        <action selector="panPurple:" destination="BYZ-38-t0r" id="3fN-zv-b5F"/>
+                        <action selector="pan:" destination="BYZ-38-t0r" id="3fN-zv-b5F"/>
                         <outlet property="delegate" destination="BYZ-38-t0r" id="Xhg-s4-78m"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="dbg-XC-BR6">
                     <connections>
-                        <action selector="panPurple:" destination="BYZ-38-t0r" id="on9-23-gha"/>
+                        <action selector="pan:" destination="BYZ-38-t0r" id="on9-23-gha"/>
                         <outlet property="delegate" destination="BYZ-38-t0r" id="GG1-Cc-GJ0"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="aST-aM-Y5m">
                     <connections>
-                        <action selector="panPurple:" destination="BYZ-38-t0r" id="B5C-pO-Bac"/>
+                        <action selector="pan:" destination="BYZ-38-t0r" id="B5C-pO-Bac"/>
                         <outlet property="delegate" destination="BYZ-38-t0r" id="InK-sw-pGp"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="Agg-AY-Shd">
                     <connections>
-                        <action selector="panPurple:" destination="BYZ-38-t0r" id="WT2-nP-Zed"/>
+                        <action selector="pan:" destination="BYZ-38-t0r" id="WT2-nP-Zed"/>
                         <outlet property="delegate" destination="BYZ-38-t0r" id="lTP-8p-NbK"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="VA9-mA-DHb">
                     <connections>
-                        <action selector="panPurple:" destination="BYZ-38-t0r" id="oZG-AA-eXl"/>
+                        <action selector="pan:" destination="BYZ-38-t0r" id="oZG-AA-eXl"/>
                         <outlet property="delegate" destination="BYZ-38-t0r" id="wpF-iv-59B"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="EyG-Xm-IzV">
                     <connections>
-                        <action selector="panPurple:" destination="BYZ-38-t0r" id="pnY-7x-WXM"/>
+                        <action selector="pan:" destination="BYZ-38-t0r" id="pnY-7x-WXM"/>
                         <outlet property="delegate" destination="BYZ-38-t0r" id="tRt-1E-Mbc"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="9jK-Zj-Sup">
                     <connections>
-                        <action selector="panPurple:" destination="BYZ-38-t0r" id="JaP-GO-73r"/>
+                        <action selector="pan:" destination="BYZ-38-t0r" id="JaP-GO-73r"/>
                         <outlet property="delegate" destination="BYZ-38-t0r" id="re3-Co-IOV"/>
                     </connections>
                 </panGestureRecognizer>
